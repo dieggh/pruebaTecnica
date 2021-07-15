@@ -1,0 +1,29 @@
+{
+  "name": "hatch",
+  "version": "1.0.0",
+  "description": "Prueba técnica backend",
+  "main": "index.js",
+  "scripts": {    
+    "test": "jest --watchAll --no-cache",
+    "start-dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dieggh/pruebaTecnica.git"
+  },
+  "author": "Diego Castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dieggh/pruebaTecnica/issues"
+  },
+  "homepage": "https://github.com/dieggh/pruebaTecnica#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.3"
+  }
+}
