@@ -43,7 +43,7 @@ module.exports.getQuoteCar = async (req, res) =>{
         const data = await getAll();
         const intYear = parseInt(year);
         //filtramos el arreglo para obtener solo los datos que cumplen con el parametro año y marca
-        const filteredData = data.filter(x => intYear >= x.yearRange[0] && x.yearRange[1] >= intYear && x.brand === brand); 
+        const filteredData = data.filter(x => intYear >= x.yearRange[0] && x.yearRange[1] >= intYear && x.brand.toLowerCase() === brand.toLowerCase()); 
         //realizamos la lógica para obtener los valores filtrados por coverageType y después los reducimos para obtener el más economico 
         const bestRc = getBestCotizacion(getRC(filteredData), hasAC );
         const bestLow = getBestCotizacion(getLow(filteredData), hasAC );

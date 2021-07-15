@@ -12,6 +12,10 @@ const aseguradoras = [
     'seguros atlas', 'qualitas', 'mapfre'
 ];
 
+const autos = [
+    'chevrolet', 'dodge', 'ford', 'gmc', 'honda'
+]
+
 module.exports = class Qoutes{    
 
     static getAll(){
@@ -25,7 +29,7 @@ module.exports = class Qoutes{
                 }
                 //resolvemos la promesa con las datos como array
                 const result = JSON.parse(data);                
-                resolve(result.filter(x => aseguradoras.includes(x.company.toLowerCase()) ? x : null ));             
+                resolve(result.filter(x => aseguradoras.includes(x.company.toLowerCase()) && autos.includes(x.brand.toLowerCase()) ? x : null ));             
             });
            
         });       
