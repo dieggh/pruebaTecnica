@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {    
     "test": "jest --watchAll --no-cache",
+    "start": "node index.js",
     "start-dev": "nodemon index.js"
   },
   "repository": {

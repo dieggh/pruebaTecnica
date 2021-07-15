@@ -1,0 +1,14 @@
+Ejecutar aplicación
+1- Clonar / descargar el repositorio 
+2- Navegar al directorio y ejecutar comando: npm install, para que se instalen las dependencias del proyecto
+3- Iniciar proyecto con comando: npm start
+
+Consideraciones:
+El servidor corre por default en el puerto 4000, para cambiar esto ir a la línea 5 en el archivo index.js
+Para ejecutar la test-suite, asegurese de tener instaladas las dependencias de desarrollo y ejecute el comando: npm run test
+
+Endpoints
+GET: /api/bestOptionsPerYear/2003
+                            PARAM
+GET: /api/quoteCar/FORD/2008/false
+                  PARAM/PARAM/PARAM
