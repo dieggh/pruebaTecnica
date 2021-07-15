@@ -9,6 +9,6 @@ Para ejecutar la test-suite, asegurese de tener instaladas las dependencias de d
 
 Endpoints
 GET: /api/bestOptionsPerYear/2003
-                            PARAM
+                             year
 GET: /api/quoteCar/FORD/2008/false
-                  PARAM/PARAM/PARAM
+                  brand/year/hasAC
